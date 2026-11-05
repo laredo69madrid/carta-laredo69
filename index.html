@@ -1,146 +1,62 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Laredo 69 · Carta</title>
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Laredo 69 · Carta</title><style>html,body{margin:0;background:#111210}</style></head><body>
+<div id="laredo-nov-menu" lang="es">
 <style>
-:root{--bg:#111210;--cream:#E8DFD0;--cream2:#F2EDE3;--olive:#A5AD49;--gold:#C5A45D;--muted:#BDB5A8}
-*{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--cream);font-family:Arial,Helvetica,sans-serif}
-.menu{max-width:560px;margin:auto;padding:34px 22px 48px} header{text-align:center;padding-bottom:25px;border-bottom:1px solid rgba(197,164,93,.62)}
-h1,.section-title,.sub-title,.name,.price{font-family:Georgia,"Times New Roman",serif}
-h1{font-size:40px;letter-spacing:2px;margin:0;color:var(--cream2);font-weight:500}.madrid{color:var(--gold);letter-spacing:7px;font-size:10px;margin-top:6px}
-.ritual{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:18px;margin-top:18px}.ritual-en{color:var(--olive);font-size:9px;letter-spacing:2.6px;margin-top:6px}
-.lang{display:flex;justify-content:center;gap:9px;margin-top:20px}.lang button{padding:9px 17px;border-radius:999px;font-size:11px;letter-spacing:1px;cursor:pointer}
-.active{background:var(--olive);color:var(--bg);border:1px solid var(--olive)}.inactive{background:transparent;color:var(--gold);border:1px solid var(--gold)}
-.section-title{color:var(--olive);font-size:20px;margin:34px 0 5px;border-left:3px solid var(--gold);padding-left:10px;font-weight:600}.sub-title{color:var(--olive);font-size:16px;margin:25px 0 3px}
-.section-price{float:right;color:var(--gold);font-size:18px}.intro{color:var(--muted);font-size:13px;margin:5px 0 9px 13px;font-style:italic}
-.item{padding:13px 0;border-bottom:1px solid rgba(197,164,93,.18)}.row{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
-.name{font-size:18px}.price{color:var(--gold);font-size:17px;white-space:nowrap}.desc{color:var(--muted);font-size:13px;line-height:1.5;margin-top:5px}
-.flavour{color:var(--olive);font-size:10px;letter-spacing:1.15px;margin-top:5px}.badge{border:1px solid var(--gold);color:var(--gold);border-radius:20px;padding:2px 7px;font:9px Arial;margin-left:5px;vertical-align:2px}
-.panel{display:none}.panel.show{display:block}
-footer{text-align:center;border-top:1px solid rgba(197,164,93,.62);margin-top:40px;padding-top:25px;color:var(--gold);font-size:10px;letter-spacing:2px}.tag{color:var(--olive);margin-top:8px;letter-spacing:1px}
+#laredo-nov-menu{background:#111210;color:#e8e2d5;max-width:620px;margin:auto;padding:30px 22px 42px;font:14px/1.5 Arial,sans-serif;box-sizing:border-box}#laredo-nov-menu *{box-sizing:border-box}#laredo-nov-menu header{text-align:center;padding:24px 0 30px;border-bottom:1px solid #76673c}#laredo-nov-menu h1{font:500 40px Georgia,serif;letter-spacing:2px;margin:0;color:#e8e2d5}#laredo-nov-menu .city{letter-spacing:7px;color:#b8a56b;margin:8px 0 20px;font-size:12px}#laredo-nov-menu .ritual{font:italic 22px Georgia,serif}#laredo-nov-menu .sub{letter-spacing:2px;color:#a6ad55;font-size:11px;margin-top:10px}#laredo-nov-menu nav{display:flex;justify-content:center;gap:12px;margin-top:24px}#laredo-nov-menu button{font:14px Arial,sans-serif;min-height:44px;padding:10px 21px;border:1px solid #b8a56b;border-radius:25px;background:#111210;color:#d4c38a}#laredo-nov-menu button[aria-pressed=true]{background:#a6ad55;color:#111210;border-color:#a6ad55}#laredo-nov-menu section{margin-top:34px}#laredo-nov-menu h2{font:500 22px Georgia,serif;color:#b6bd69;border-left:4px solid #b8a56b;padding-left:10px;display:flex;justify-content:space-between;gap:14px;margin:0 0 9px}#laredo-nov-menu h2 span:last-child{white-space:nowrap}#laredo-nov-menu h3{font:500 17px Georgia,serif;color:#b6bd69;margin:24px 0 0;text-transform:uppercase;letter-spacing:1px}#laredo-nov-menu .intro{color:#bdb7aa;margin:6px 0 3px;font-style:italic}#laredo-nov-menu .item{padding:15px 0;border-bottom:1px solid #343626}#laredo-nov-menu .row{display:flex;justify-content:space-between;gap:12px;align-items:baseline}#laredo-nov-menu .name{font:500 19px Georgia,serif}#laredo-nov-menu .price{color:#d4c38a;white-space:nowrap;font-size:17px}#laredo-nov-menu .profile{color:#b6bd69;font-size:11px;letter-spacing:1px;margin-top:6px}#laredo-nov-menu .desc{color:#bdb7aa;margin-top:6px}#laredo-nov-menu .pair{color:#b6bd69;font:italic 14px/1.5 Georgia,serif;margin-top:8px}#laredo-nov-menu footer{text-align:center;color:#bdb7aa;font-size:12px;border-top:1px solid #76673c;margin-top:34px;padding-top:20px}#laredo-nov-menu .signature{font:11px Arial,sans-serif;color:#d4c38a;margin-left:8px}@media(max-width:380px){#laredo-nov-menu{padding:22px 15px}#laredo-nov-menu h2{font-size:20px}}
 </style>
-</head>
-<body><div class="menu">
-<header>
-<h1>LAREDO 69</h1><div class="madrid">MADRID</div>
-<div class="ritual" id="ritualMain">El ritual de la tarde</div>
-<div class="ritual-en" id="ritualSub">THE AFTERNOON RITUAL</div>
-<div class="lang"><button id="esBtn" class="active" onclick="setLang('es')">ESPAÑOL</button><button id="enBtn" class="inactive" onclick="setLang('en')">ENGLISH</button></div>
-</header>
-
-<div id="es" class="panel show">
-<div class="section-title">CÓCTELES DE AUTOR <span class="section-price">7 €</span></div><p class="intro">Nuestra forma de empezar la tarde.</p>
-<div class="item"><span class="name">Laredo Sunset</span><span class="badge">FIRMA</span><div class="flavour">FRESCO · FLORAL · VIBRANTE</div><div class="desc">Vodka · hibisco · pomelo rosa</div></div>
-<div class="item"><div class="name">Paloma Mediterránea</div><div class="flavour">CÍTRICA · SALINA · REFRESCANTE</div><div class="desc">Tequila · lima · pomelo rosa · sal Maldon</div></div>
-
-<div class="section-title">CLÁSICOS DEL TARDEO <span class="section-price">7 €</span></div><p class="intro">Ligeros, burbujeantes y de sobremesa.</p>
-<div class="item"><div class="name">Aperol Spritz</div><div class="flavour">SUAVE · CÍTRICO · BURBUJEANTE</div><div class="desc">Aperol · Verdejo · soda</div></div>
-<div class="item"><div class="name">Campari Spritz</div><div class="flavour">AMARGO · INTENSO · BURBUJEANTE</div><div class="desc">Campari · Verdejo · soda</div></div>
-<div class="item"><div class="name">Vermut Spritz</div><div class="flavour">AROMÁTICO · SUAVE · BURBUJEANTE</div><div class="desc">Vermut rojo · Verdejo · soda</div></div>
-<div class="item"><div class="name">Moscow Mule</div><div class="flavour">FRESCO · CÍTRICO · ESPECIADO</div><div class="desc">Vodka · lima · ginger beer</div></div>
-<div class="item"><div class="name">Mojito</div><div class="flavour">FRESCO · CÍTRICO · HERBAL</div><div class="desc">Ron · lima · hierbabuena · azúcar · soda</div></div>
-<div class="item"><div class="name">Negroni</div><div class="flavour">AMARGO · INTENSO · AROMÁTICO</div><div class="desc">Ginebra · vermut rojo · Campari</div></div>
-
-<div class="section-title">0,0 · SIN ALCOHOL <span class="section-price">6 €</span></div><p class="intro">Todo el ritual. Sin alcohol.</p>
-<div class="item"><div class="name">Sunset 0,0</div><div class="flavour">FLORAL · CÍTRICO · BURBUJEANTE</div><div class="desc">Hibisco · pomelo rosa · lima</div></div>
-<div class="item"><div class="name">Mojito 0,0</div><div class="flavour">REFRESCANTE · CÍTRICO</div><div class="desc">Lima · hierbabuena · azúcar · soda</div></div>
-
-<div class="section-title">COPAS &amp; PERFECT SERVE</div>
-<div class="sub-title">GINEBRAS</div>
-<div class="item"><div class="row"><div><div class="name">Clásicas &amp; Sabores</div><div class="desc">Seagram’s · Beefeater · Tanqueray · Puerto de Indias · Larios Rosé</div></div><div class="price">7 €</div></div></div>
-<div class="item"><div class="row"><div><div class="name">Premium</div><div class="desc">Roku · Nordés · Hendrick’s · Brockman’s</div></div><div class="price">9 €</div></div></div>
-
-<div class="sub-title">RONES</div>
-<div class="item"><div class="row"><div><div class="name">Clásicos</div><div class="desc">Barceló · Brugal · Bacardí</div></div><div class="price">7 €</div></div></div>
-<div class="item"><div class="row"><div><div class="name">Añejos</div><div class="desc">Havana Club 7 · Matusalém 7</div></div><div class="price">10 €</div></div></div>
-<div class="item"><div class="row"><div><div class="name">Reserva</div><div class="desc">Matusalém 15 · Flor de Caña 12</div></div><div class="price">11 €</div></div></div>
-<div class="item"><div class="row"><div class="name">Zacapa 23</div><div class="price">15 €</div></div></div>
-
-<div class="sub-title">WHISKY</div>
-<div class="item"><div class="row"><div><div class="name">Clásicos</div><div class="desc">Red Label · J&amp;B · Ballantine’s</div></div><div class="price">7 €</div></div></div>
-<div class="item"><div class="row"><div><div class="name">Selección</div><div class="desc">Jack Daniel’s</div></div><div class="price">9 €</div></div></div>
-<div class="item"><div class="row"><div class="name">Black Label</div><div class="price">10 €</div></div></div>
-<div class="item"><div class="row"><div class="name">Whisky Japonés</div><div class="price">12 €</div></div></div>
-
-<div class="sub-title">VODKA</div>
-<div class="item"><div class="row"><div class="name">Grey Goose</div><div class="price">12 €</div></div></div>
-
-<div class="section-title">APERITIVOS</div>
-<div class="item"><div class="row"><div><div class="name">Vermut Tradicional</div><div class="desc">Vermut rojo · sifón</div></div><div class="price">4 €</div></div></div>
-
-<div class="section-title">CERVEZAS <span class="section-price">4 €</span></div>
-<div class="item"><div class="name">Mahou</div></div><div class="item"><div class="name">Alhambra Verde</div></div><div class="item"><div class="name">1906</div></div>
-
-<div class="section-title">VINOS · POR COPAS <span class="section-price">3 €</span></div>
-<div class="item"><div class="name">Verdejo</div><div class="flavour">FRESCO · FRUTAL · LIGERO</div></div>
-<div class="item"><div class="name">Alma</div><div class="flavour">SUAVE · AROMÁTICO · FÁCIL DE BEBER</div></div>
-<div class="item"><div class="name">Rioja</div><div class="flavour">EQUILIBRADO · FRUTAL · SUAVE</div></div>
-</div>
-
-<div id="en" class="panel">
-<div class="section-title">SIGNATURE COCKTAILS <span class="section-price">7 €</span></div><p class="intro">Our way to start the afternoon.</p>
-<div class="item"><span class="name">Laredo Sunset</span><span class="badge">SIGNATURE</span><div class="flavour">FRESH · FLORAL · VIBRANT</div><div class="desc">Vodka · hibiscus · pink grapefruit</div></div>
-<div class="item"><div class="name">Paloma Mediterránea</div><div class="flavour">CITRUS · SALINE · REFRESHING</div><div class="desc">Tequila · lime · pink grapefruit · Maldon salt</div></div>
-
-<div class="section-title">AFTERNOON CLASSICS <span class="section-price">7 €</span></div><p class="intro">Light, sparkling and made for long afternoons.</p>
-<div class="item"><div class="name">Aperol Spritz</div><div class="flavour">SMOOTH · CITRUS · SPARKLING</div><div class="desc">Aperol · Verdejo · soda</div></div>
-<div class="item"><div class="name">Campari Spritz</div><div class="flavour">BITTER · BOLD · SPARKLING</div><div class="desc">Campari · Verdejo · soda</div></div>
-<div class="item"><div class="name">Vermouth Spritz</div><div class="flavour">AROMATIC · SMOOTH · SPARKLING</div><div class="desc">Red vermouth · Verdejo · soda</div></div>
-<div class="item"><div class="name">Moscow Mule</div><div class="flavour">FRESH · CITRUS · SPICY</div><div class="desc">Vodka · lime · ginger beer</div></div>
-<div class="item"><div class="name">Mojito</div><div class="flavour">FRESH · CITRUS · HERBAL</div><div class="desc">Rum · lime · mint · sugar · soda</div></div>
-<div class="item"><div class="name">Negroni</div><div class="flavour">BITTER · BOLD · AROMATIC</div><div class="desc">Gin · red vermouth · Campari</div></div>
-
-<div class="section-title">0.0 · ALCOHOL FREE <span class="section-price">6 €</span></div><p class="intro">All the ritual. No alcohol.</p>
-<div class="item"><div class="name">Sunset 0.0</div><div class="flavour">FLORAL · CITRUS · SPARKLING</div><div class="desc">Hibiscus · pink grapefruit · lime</div></div>
-<div class="item"><div class="name">Mojito 0.0</div><div class="flavour">REFRESHING · CITRUS</div><div class="desc">Lime · mint · sugar · soda</div></div>
-
-<div class="section-title">DRINKS &amp; PERFECT SERVE</div>
-<div class="sub-title">GIN</div>
-<div class="item"><div class="row"><div><div class="name">Classic &amp; Flavoured</div><div class="desc">Seagram’s · Beefeater · Tanqueray · Puerto de Indias · Larios Rosé</div></div><div class="price">7 €</div></div></div>
-<div class="item"><div class="row"><div><div class="name">Premium</div><div class="desc">Roku · Nordés · Hendrick’s · Brockman’s</div></div><div class="price">9 €</div></div></div>
-
-<div class="sub-title">RUM</div>
-<div class="item"><div class="row"><div><div class="name">Classic</div><div class="desc">Barceló · Brugal · Bacardí</div></div><div class="price">7 €</div></div></div>
-<div class="item"><div class="row"><div><div class="name">Aged</div><div class="desc">Havana Club 7 · Matusalém 7</div></div><div class="price">10 €</div></div></div>
-<div class="item"><div class="row"><div><div class="name">Reserve</div><div class="desc">Matusalém 15 · Flor de Caña 12</div></div><div class="price">11 €</div></div></div>
-<div class="item"><div class="row"><div class="name">Zacapa 23</div><div class="price">15 €</div></div></div>
-
-<div class="sub-title">WHISKY</div>
-<div class="item"><div class="row"><div><div class="name">Classic</div><div class="desc">Red Label · J&amp;B · Ballantine’s</div></div><div class="price">7 €</div></div></div>
-<div class="item"><div class="row"><div><div class="name">Selection</div><div class="desc">Jack Daniel’s</div></div><div class="price">9 €</div></div></div>
-<div class="item"><div class="row"><div class="name">Black Label</div><div class="price">10 €</div></div></div>
-<div class="item"><div class="row"><div class="name">Japanese Whisky</div><div class="price">12 €</div></div></div>
-
-<div class="sub-title">VODKA</div>
-<div class="item"><div class="row"><div class="name">Grey Goose</div><div class="price">12 €</div></div></div>
-
-<div class="section-title">APERITIFS</div>
-<div class="item"><div class="row"><div><div class="name">Traditional Vermouth</div><div class="desc">Red vermouth · soda water</div></div><div class="price">4 €</div></div></div>
-
-<div class="section-title">BEER <span class="section-price">4 €</span></div>
-<div class="item"><div class="name">Mahou</div></div><div class="item"><div class="name">Alhambra Verde</div></div><div class="item"><div class="name">1906</div></div>
-
-<div class="section-title">WINES · BY THE GLASS <span class="section-price">3 €</span></div>
-<div class="item"><div class="name">Verdejo</div><div class="flavour">FRESH · FRUITY · LIGHT</div></div>
-<div class="item"><div class="name">Alma</div><div class="flavour">SMOOTH · AROMATIC · EASY-DRINKING</div></div>
-<div class="item"><div class="name">Rioja</div><div class="flavour">BALANCED · FRUITY · SMOOTH</div></div>
-</div>
-
-<footer>LAREDO 69 · MADRID<div class="tag" id="tag">COPAS · TARDEO · BUEN AMBIENTE</div></footer>
-</div>
+<header><h1>LAREDO 69</h1><div class="city">MADRID</div><div class="ritual">El ritual de la tarde</div><div class="sub">THE AFTERNOON RITUAL</div><nav aria-label="Idioma / Language"><button type="button" data-lang="es" aria-pressed="true">ESPAÑOL</button><button type="button" data-lang="en" aria-pressed="false">ENGLISH</button></nav></header>
+<main></main><footer></footer>
 <script>
-function setLang(l){
-document.getElementById('es').classList.toggle('show',l==='es');
-document.getElementById('en').classList.toggle('show',l==='en');
-document.getElementById('esBtn').className=l==='es'?'active':'inactive';
-document.getElementById('enBtn').className=l==='en'?'active':'inactive';
-document.getElementById('ritualMain').textContent=l==='es'?'El ritual de la tarde':'The afternoon ritual';
-document.getElementById('ritualSub').textContent=l==='es'?'THE AFTERNOON RITUAL':'EL RITUAL DE LA TARDE';
-document.getElementById('tag').textContent=l==='es'?'COPAS · TARDEO · BUEN AMBIENTE':'DRINKS · AFTERNOONS · GOOD VIBES';
-document.documentElement.lang=l;
-window.scrollTo({top:0,behavior:'smooth'});
+(()=>{
+const root=document.getElementById('laredo-nov-menu');
+const duo=(es,en)=>[es,en];
+const cocktails=[
+['Paloma',duo('Tequila · limón · pomelo rosa · sal Maldon','Tequila · lemon · pink grapefruit · Maldon salt'),duo('CÍTRICA · SALINA · REFRESCANTE','CITRUSY · SALINE · REFRESHING')],
+['Aperol Spritz',duo('Aperol · Prosecco · soda','Aperol · Prosecco · soda water'),duo('SUAVE · CÍTRICO · BURBUJEANTE','SMOOTH · CITRUSY · SPARKLING')],
+['Campari Spritz',duo('Campari · Prosecco · soda','Campari · Prosecco · soda water'),duo('AMARGO · INTENSO · BURBUJEANTE','BITTER · BOLD · SPARKLING')],
+[duo('Vermut Spritz','Vermouth Spritz'),duo('Vermut rojo · Prosecco · soda','Red vermouth · Prosecco · soda water'),duo('AROMÁTICO · SUAVE · BURBUJEANTE','AROMATIC · SMOOTH · SPARKLING')],
+['Moscow Mule',duo('Vodka · lima · ginger beer','Vodka · lime · ginger beer'),duo('FRESCO · CÍTRICO · ESPECIADO','FRESH · CITRUSY · SPICY')],
+[duo('Moscow Mule de naranja','Orange Moscow Mule'),duo('Vodka · naranja · lima · ginger beer','Vodka · orange · lime · ginger beer'),duo('CÍTRICO · AFRUTADO · ESPECIADO','CITRUSY · FRUITY · SPICY')],
+['Mojito',duo('Ron · lima · hierbabuena · azúcar · soda','Rum · lime · mint · sugar · soda water'),duo('FRESCO · CÍTRICO · HERBAL','FRESH · CITRUSY · HERBAL')],
+['Negroni',duo('Ginebra · vermut rojo · Campari','Gin · red vermouth · Campari'),duo('AMARGO · INTENSO · AROMÁTICO','BITTER · BOLD · AROMATIC')],
+['Margarita',duo('Tequila · Cointreau · lima · borde de sal','Tequila · Cointreau · lime · salt rim'),duo('CÍTRICO · FRESCO · INTENSO','CITRUSY · FRESH · BOLD')],
+['Espresso Martini',duo('Vodka · licor de café · café espresso','Vodka · coffee liqueur · espresso'),duo('CAFÉ · INTENSO · SEDOSO','COFFEE · BOLD · SILKY')],
+['Piña Colada',duo('Ron · piña · crema de coco','Rum · pineapple · cream of coconut'),duo('TROPICAL · CREMOSA · AFRUTADA','TROPICAL · CREAMY · FRUITY')]
+];
+const zero=[['Laredo Sunset 0,0',duo('Hibisco · pomelo rosa · limón','Hibiscus · pink grapefruit · lemon'),duo('FLORAL · CÍTRICO · BURBUJEANTE','FLORAL · CITRUSY · SPARKLING')],['Mojito 0,0',duo('Lima · hierbabuena · azúcar · soda','Lime · mint · sugar · soda water'),duo('REFRESCANTE · CÍTRICO · HERBAL','REFRESHING · CITRUSY · HERBAL')],['Moscow Mule 0,0',duo('Lima · ginger beer sin alcohol','Lime · alcohol-free ginger beer'),duo('FRESCO · CÍTRICO · ESPECIADO','FRESH · CITRUSY · SPICY')]];
+zero.push([duo('Moscow Mule de naranja 0,0','Orange Moscow Mule 0.0'),duo('Lima · naranja · ginger beer sin alcohol','Lime · orange · alcohol-free ginger beer'),duo('CÍTRICO · AFRUTADO · ESPECIADO','CITRUSY · FRUITY · SPICY')]);
+const spirits=[
+[duo('Ginebras','Gin'),[[duo('Clásicas & Sabores','Classic & Flavoured'),'7 €','Seagram’s · Beefeater · Tanqueray · Puerto de Indias · Larios Rosé'],['Premium','9 €','Roku · Nordés · Hendrick’s · Brockman’s']]],
+[duo('Rones','Rum'),[[duo('Clásicos','Classics'),'7 €','Barceló · Brugal · Bacardí'],[duo('Añejos','Aged'),'10 €','Havana Club 7 · Matusalém 7'],[duo('Reserva','Reserve'),'11 €','Matusalém 15 · Flor de Caña 12'],['Zacapa 23','15 €','']]],
+['Whisky & Vodka',[[duo('Clásicos','Classics'),'7 €','Red Label · J&B · Ballantine’s'],['Jack Daniel’s','9 €',''],['Black Label','10 €',''],[duo('Whisky japonés','Japanese whisky'),'12 €',''],['Grey Goose','12 €','']]]];
+const bites=[
+[duo('Gilda clásica','Classic Gilda'),duo('Elaborada a mano con anchoa en salazón, piparra y aceituna manzanilla. El aperitivo de siempre.','Handmade with salt-cured anchovy, pickled green pepper and a Manzanilla olive. A timeless aperitif.'),'3 €','Campari Spritz'],
+[duo('Gilda de anchoa con alegría','Spicy anchovy Gilda'),duo('Anchoa, piparra y aceituna manzanilla con el toque picante de la alegría riojana. Elaborada a mano.','Handmade with anchovy, pickled green pepper and a Manzanilla olive, with a spicy kick from alegría riojana chilli.'),'3 €','Aperol Spritz',duo('PICANTE','SPICY')],
+[duo('Gilda de boquerón','Marinated white anchovy Gilda'),duo('Boquerón, piparra y aceituna manzanilla, ensartados a mano. Una alternativa a la gilda tradicional.','Hand-assembled with marinated white anchovy, pickled green pepper and a Manzanilla olive. A twist on the traditional Gilda.'),'3 €','Margarita'],
+[duo('Gilda de queso y anchoa','Cheese & anchovy Gilda'),duo('La combinación de anchoa, piparra y aceituna manzanilla con un bocado de queso. Elaborada a mano.','Anchovy, pickled green pepper and a Manzanilla olive paired with a bite of cheese. Handmade.'),'3 €','Laredo Sunset'],
+[duo('Anchoa Gran Reserva Rezumar','Rezumar Gran Reserva anchovy'),duo('Anchoa del Cantábrico elaborada en Laredo y madurada 12 meses en barrica, sobre pan artesanal con un velo de mantequilla.','Cantabrian anchovy prepared in Laredo and barrel-matured for 12 months, served on artisan bread with a thin layer of butter.'),'4 €','Paloma']];
+function draw(language){
+const k=language==='en'?1:0; const t=v=>Array.isArray(v)?v[k]:v;
+const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text)n.textContent=t(text);return n;};
+const main=root.querySelector('main');main.replaceChildren();root.lang=language;
+function section(title,price,intro){const s=el('section');const h=el('h2');h.append(el('span','',title));if(price)h.append(el('span','',price));s.append(h);if(intro)s.append(el('p','intro',intro));main.append(s);return s;}
+function item(s,name,desc,profile,price){const d=el('div','item');const r=el('div','row');r.append(el('div','name',name));if(price)r.append(el('div','price',price));d.append(r);if(profile)d.append(el('div','profile',profile));if(desc)d.append(el('div','desc',desc));s.append(d);return d;}
+let s=section(duo('CÓCTELES DE AUTOR','SIGNATURE COCKTAILS'),'8 €',duo('Nuestra forma de empezar la tarde.','Our way to start the afternoon.'));
+let signature=item(s,'Laredo Sunset',duo('Vodka · hibisco · pomelo rosa','Vodka · hibiscus · pink grapefruit'),duo('FRESCO · FLORAL · VIBRANTE','FRESH · FLORAL · VIBRANT'));signature.querySelector('.name').append(el('span','signature',duo('FIRMA','SIGNATURE')));
+item(s,duo('Café de Nochebuena','Café de Nochebuena · Christmas Eve Coffee'),duo('Ron añejo · licor de café · espresso · aroma de piel de naranja','Aged rum · coffee liqueur · espresso · orange peel aroma'),duo('ESPECIAL DE NAVIDAD · CAFÉ · AROMÁTICO','CHRISTMAS SPECIAL · COFFEE · AROMATIC'));
+s=section(duo('CLÁSICOS DEL TARDEO','CLASSIC COCKTAILS'),'8 €',duo('Encuentra tu cóctel, disfruta tu tarde.','Find your cocktail, enjoy your afternoon.'));cocktails.forEach(c=>item(s,...c));
+s=section(duo('0,0 · SIN ALCOHOL','0.0 · ALCOHOL FREE'),'6 €',duo('Todo el ritual. Sin alcohol.','All the ritual. Alcohol free.'));zero.forEach(c=>item(s,...c));
+s=section(duo('COPAS & PERFECT SERVE','SPIRITS & PERFECT SERVE'));spirits.forEach(g=>{s.append(el('h3','',g[0]));g[1].forEach(c=>item(s,c[0],c[2],null,c[1]));});
+s=section(duo('APERITIVOS','APERITIFS'));item(s,duo('Vermut tradicional','Traditional vermouth'),duo('Vermut rojo · sifón','Red vermouth · soda water'),null,'4 €');
+s=section(duo('CERVEZAS · TERCIOS','BOTTLED BEER'),'4 €');['Mahou','Alhambra Verde','1906'].forEach(n=>item(s,n));
+s=section(duo('VINOS · POR COPAS','WINE BY THE GLASS'),'3 €');item(s,'Verdejo',null,duo('FRESCO · FRUTAL · LIGERO','FRESH · FRUITY · LIGHT'));item(s,'Alma',null,duo('SEMIDULCE','SEMI-SWEET'));item(s,'Rioja',null,duo('EQUILIBRADO · FRUTAL · SUAVE','BALANCED · FRUITY · SMOOTH'));
+s=section(duo('PARA PICAR','SMALL BITES'),null,duo('Pequeños bocados para acompañar una buena tarde. Precios por unidad.','Small bites for a lovely afternoon. Prices per piece.'));bites.forEach(c=>{const d=item(s,c[0],c[1],c[4],c[2]);d.append(el('div','pair',(k?'Try it with: ':'Pruébala con: ')+c[3]+'.'));});s.append(el('p','intro',duo('Cócteles aparte.','Cocktails sold separately.')));
+const footer=root.querySelector('footer');footer.replaceChildren(el('div','','LAREDO 69 · MADRID'),el('div','',duo('Consulta al personal sobre alérgenos · IVA incluido','Please ask our staff about allergens · VAT included')));
+root.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===language)));
 }
+root.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>draw(b.dataset.lang)));draw('es');
+})();
 </script>
+</div>
+
 </body></html>
