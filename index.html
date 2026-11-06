@@ -35,6 +35,14 @@ const bites=[
 [duo('Gilda de boquerón','Marinated white anchovy Gilda'),duo('Boquerón, piparra y aceituna manzanilla, ensartados a mano. Una alternativa a la gilda tradicional.','Hand-assembled with marinated white anchovy, pickled green pepper and a Manzanilla olive. A twist on the traditional Gilda.'),'3 €','Margarita'],
 [duo('Gilda de queso y anchoa','Cheese & anchovy Gilda'),duo('La combinación de anchoa, piparra y aceituna manzanilla con un bocado de queso. Elaborada a mano.','Anchovy, pickled green pepper and a Manzanilla olive paired with a bite of cheese. Handmade.'),'3 €','Laredo Sunset'],
 [duo('Anchoa Gran Reserva Rezumar','Rezumar Gran Reserva anchovy'),duo('Anchoa del Cantábrico elaborada en Laredo y madurada 12 meses en barrica, sobre pan artesanal con un velo de mantequilla.','Cantabrian anchovy prepared in Laredo and barrel-matured for 12 months, served on artisan bread with a thin layer of butter.'),'4 €','Paloma']];
+const standardGildaAllergens=duo('Contiene pescado y sulfitos. Puede contener trazas de crustáceos, huevo, leche y moluscos.','Contains fish and sulphites. May contain traces of crustaceans, egg, milk and molluscs.');
+const biteAllergens=[
+standardGildaAllergens,
+standardGildaAllergens,
+standardGildaAllergens,
+duo('Contiene pescado, leche, huevo y sulfitos. Puede contener trazas de crustáceos y moluscos.','Contains fish, milk, egg and sulphites. May contain traces of crustaceans and molluscs.'),
+duo('Contiene pescado, gluten (pan) y leche (mantequilla).','Contains fish, gluten (bread) and milk (butter).')
+];
 function draw(language){
 const k=language==='en'?1:0; const t=v=>Array.isArray(v)?v[k]:v;
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text)n.textContent=t(text);return n;};
@@ -50,7 +58,7 @@ s=section(duo('COPAS & PERFECT SERVE','SPIRITS & PERFECT SERVE'));spirits.forEac
 s=section(duo('APERITIVOS','APERITIFS'));item(s,duo('Vermut tradicional','Traditional vermouth'),duo('Vermut rojo · sifón','Red vermouth · soda water'),null,'4 €');
 s=section(duo('CERVEZAS · TERCIOS','BOTTLED BEER'),'4 €');['Mahou','Alhambra Verde','1906'].forEach(n=>item(s,n));
 s=section(duo('VINOS · POR COPAS','WINE BY THE GLASS'),'3 €');item(s,'Verdejo',null,duo('FRESCO · FRUTAL · LIGERO','FRESH · FRUITY · LIGHT'));item(s,'Alma',null,duo('SEMIDULCE','SEMI-SWEET'));item(s,'Rioja',null,duo('EQUILIBRADO · FRUTAL · SUAVE','BALANCED · FRUITY · SMOOTH'));
-s=section(duo('PARA PICAR','SMALL BITES'),null,duo('Pequeños bocados para acompañar una buena tarde. Precios por unidad.','Small bites for a lovely afternoon. Prices per piece.'));bites.forEach(c=>{const d=item(s,c[0],c[1],c[4],c[2]);d.append(el('div','pair',(k?'Try it with: ':'Pruébala con: ')+c[3]+'.'));});s.append(el('p','intro',duo('Cócteles aparte.','Cocktails sold separately.')));
+s=section(duo('PARA PICAR','SMALL BITES'),null,duo('Pequeños bocados para acompañar una buena tarde. Precios por unidad.','Small bites for a lovely afternoon. Prices per piece.'));bites.forEach((c,i)=>{const d=item(s,c[0],c[1],c[4],c[2]);d.append(el('div','desc',biteAllergens[i]));d.append(el('div','pair',(k?'Try it with: ':'Pruébala con: ')+c[3]+'.'));});s.append(el('p','intro',duo('Cócteles aparte.','Cocktails sold separately.')));
 const footer=root.querySelector('footer');footer.replaceChildren(el('div','','LAREDO 69 · MADRID'),el('div','',duo('Consulta al personal sobre alérgenos · IVA incluido','Please ask our staff about allergens · VAT included')));
 root.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===language)));
 }
